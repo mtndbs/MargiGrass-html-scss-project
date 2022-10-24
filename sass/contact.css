@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", "sans-serif";
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Henny Penny";
+  font-family: "Pattaya";
+}
+
+h1 {
+  color: #a752aa;
+}
+
+.my-form {
+  border-radius: 5px;
+  background-color: #ffcd00;
+  box-shadow: 0px 0px 7px 4px rgba(50, 50, 50, 0.59);
+}
+
+input[type=text],
+input[type=tel],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 8px 8px 8px 0;
+  display: inline-block;
+}
+
+input::-moz-placeholder {
+  filter: opacity(0%);
+}
+
+input:-ms-input-placeholder {
+  filter: opacity(0%);
+}
+
+input::placeholder {
+  filter: opacity(0%);
+}
+
+.myBtn {
+  border-radius: 5px;
+  padding: 5px 15px;
+  background-color: #a752aa;
+  color: #050505;
+  box-shadow: 0 0 5px #333;
+  transition: all 1s;
+  text-decoration: none;
+}
+
+.myBtn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.75);
+}
+
+.myBtn:active {
+  transform: scale(0.95);
+}
+
+#check-off {
+  color: #70c02c;
+}
+
+@media screen and (max-width: 700px) {
+  label {
+    display: none;
+  }
+  input::-moz-placeholder {
+    filter: opacity(100%);
+  }
+  input:-ms-input-placeholder {
+    filter: opacity(100%);
+  }
+  input::placeholder {
+    filter: opacity(100%);
+  }
+  input[type=text],
+input[type=tel],
+textarea {
+    width: 97%;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin: 4px;
+  }
+}/*# sourceMappingURL=contact.css.map */

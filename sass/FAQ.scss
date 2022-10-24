@@ -1,0 +1,28 @@
+@import "colors";
+@import "misc";
+
+*{
+    font-family: 'Roboto', 'sans-serif';
+    }
+h1,h2,h3,h4,h5{
+    font-family: 'Henny Penny';  
+font-family: 'Pattaya'; 
+}
+.center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.my-div{   
+    @include myDiv($myPurple)
+}
+.main-title{
+    font-size:4rem;
+    color:$myPurple
+}
+.my-title{
+    @include myDiv($myYellow);
+    font-size:2rem
+}

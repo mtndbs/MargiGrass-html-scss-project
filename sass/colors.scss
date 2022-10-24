@@ -1,0 +1,18 @@
+$myPurple:#a752aa ;
+$myGreen:#70c02c;
+$myYellow:#ffcd00;
+$myWhite:#f2f2f2;
+$myBlack:#050505;
+
+@mixin bgMix {
+    background-image:linear-gradient(to bottom,#8c47c8,#ffcd00);}
+    
+
+    @mixin bgMix2 {
+        background-image:linear-gradient(to bottom,#48f156,#48f156,#ffcd00);}
+    // $myTriple:linear-gradient(to left, $myYellow,$myPurple,$myGreen)
+
+
+
+
+// background-image: linear-gradient(to right, #9453a6, #f2cc0f, #8cBf3f);

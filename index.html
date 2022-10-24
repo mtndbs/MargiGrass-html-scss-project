@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/sass/bootstrap.min.css">
+  <link rel="stylesheet" href="/sass/index.css">
+  <link rel="stylesheet" href="/sass/navbar.css">
+  <link rel="stylesheet" href="/sass/reponsive.css">
+  <script src="/js/bootstrap.bundle.min.js" defer></script>
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body class="bg-dark">
+
+  <!-- newNav -->
+  <nav class='navbar navbar-expand-lg navbar-light my_nav'>
+    <div class='container'>
+      <a class="navbar-brand" href="index.html">
+        <img src="./img/xlogo.png.pagespeed.ic.q4Fw8Vll14.webp" id="brand_img" alt="" width="220" height="74"
+          class="d-inline-block align-text-top">
+      </a>
+      <button class='btn  navbar-toggler border-3 px-2' type='button' data-bs-toggle='offcanvas'
+        data-bs-target='#offcanvasExample' aria-controls='offcanvasExample'>
+        <img style='width: 30px' src='/img/text-center.svg' alt='menu icon'>
+      </button>
+      <div class='offcanvas offcanvas-start-lg my_nav' tabindex='-1' id='offcanvasExample'
+        aria-labelledby='offcanvasExampleLabel'>
+        <div class='offcanvas-header d-flex d-lg-none'>
+          <h5 class='offcanvas-title text-white' id='offcanvasExampleLabel'>Mardi-gras</h5>
+          <a href='javascript:void(0) ' class='text-reset p-0' data-bs-dismiss='offcanvas' aria-label='close'>
+            <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#FFFFFF' class='bi bi-x-circle'
+              viewBox='0 0 16 16'>
+              <path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z' />
+              <path
+                d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z' />
+            </svg>
+          </a>
+        </div>
+        <div class='offcanvas-body p-lg-0 navbar'>
+          <ul class='navbar-nav' id="my-ul">
+            <li class='nav-item'>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link active' aria-current='page' href='about.html'>About</a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link active' aria-current='page' href='FAQ.html'>FAQ</a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link active' aria-current='page' href='media.html'>Gallery</a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link active' aria-current='page' href='contact.html'>Contact us!</a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link active' aria-current='page' href='trivia.html'> <span class="my-span" style="color:red">T</span><span
+                  class="my-span" style="color:blue">r</span><span class="my-span" style="color:greenyellow">i</span><span
+                  class="my-span" style="color:purple">v</span><span class="my-span" style="color:orange">i</span><span
+                  class="my-span" style="color:darkcyan">a</span><span class="my-span">!</span></a>
+            </li>
+
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control" id="my-input" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <header class="container-fluid my-header">
+    <div class="col-md-6">
+      <img src="./img/general-cjQAi-2021.02.08.08.09.59-logo2021.png" id="main_logo" alt="">
+    </div>
+    <div class="col-md-6" id="pop_div">
+    </div>
+  </header>
+
+  <div class="container-fluid" id="my_divider_2">
+    <img src="/img/gallery/mask-1973994_1920.jpg" style="max-height:300px;filter:opacity(40%)" alt="">
+    <img src="/img/gallery/venice-mask-4809862_1920.jpg" style="max-height:300px;filter:opacity(40%)" alt="">
+    <img src="/img/gallery/new-orleans-255548.jpg" style="max-height:300px;filter:opacity(40%)" alt="">
+    <img src="/img/gallery/mardi-gras-1090720_1920.jpg" style="max-height:300px;filter:opacity(40%)" alt="">
+    <img src="/img/gallery/mardi-2572882_1920.jpg" style="max-height:300px;filter:opacity(40%)" alt="">
+    <img src="/img/gallery/mardi-gras-4238473_1280.jpg" style="max-height:300px;filter:opacity(40%)" alt="">
+  </div>
+  <div class="container-fluid bg-dark" id="my_divider_3"></div>
+
+  <div class="container-fluid bg-dark">
+    <div id="alt-pic"><img src="/img/gallery/mardi-gras-4238473_1280.jpg" style="height:30vh;width:100%;" alt=""></div>
+    <div id="main-slider" class="carousel carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#main-slider" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#main-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#main-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#main-slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#main-slider" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+
+      <div class="carousel-inner ">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="/img/slider/pexels-photo-6152356.jpeg" class="d-block w-100" id="my_slider" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Crowd favorite!</h5>
+            <p>The collection of winning photos for 2022!</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="/img/slider/pexels-photo-1144283.jpeg" class="d-block w-100" id="my_slider" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>The choice of photographers</h5>
+            <p>The collection of winning photos for 2022!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/img/slider/pexels-photo-335692.jpeg" class="d-block w-100" id="my_slider" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>The exciting photo!</h5>
+            <p>The collection of winning photos for 2022!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/img/slider/pexels-photo-6691539.jpeg" class="d-block w-100" id="my_slider" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>the audience's favourite!</h5>
+            <p>The collection of winning photos for 2022!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/img/slider/pexels-photo-9393719.jpeg" class="d-block w-100" id="my_slider" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Many loved it</h5>
+            <p>The collection of winning photos for 2022!</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#main-slider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#main-slider" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  </div>
+  <div class="container-fluid bg-dark" id="my_divider_4"></div>
+
+  <div class="container-fluid my-divider">
+<div class="anim-l">
+    <h3>Learn more about Mardi-gras!</h3>
+    <h4>did you know?</h4>
+    <p>New Orleans, with its unmatched culture and world-famous music and cuisine, is an exciting place to be at any time of the year. We invite everyone to experience Mardi Gras at least once in their lifetime. Make your plans now to be a part of this great tradition and see firsthand why we say, "Laissez les bon temps rouler</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos vitae ipsa eius asperiores, rem dolorem odit aut. Veniam modi, eveniet libero adipisci quidem magnam consequatur. Dignissimos atque iste suscipit facilis est nemo necessitatibus optio, ratione quidem, distinctio in obcaecati voluptatibus!
+    </p>
+    </div>
+  </div>
+
+  <!-- card wrap -->
+  <div class="container-fluid center" id="my-boxes">
+      <div class="col-sm-12 col-md-9">
+      <div class="row justify-content-center justify-content-md-between ">
+        <h4 class="center display-4">mardi-gras sponsers!</h4>
+        <!-- card 1 -->
+        <h3>Our great hotels!</h3>
+        <div class="card col-md-4 m-1 my-card anim-l">
+          <img src="/img/sponsers/ritz-carlton-primary-black.png" class="card-img-top" style="margin-top:30px;" alt="">
+          <div class="card-body ">
+            <h5 class="card-title">Ritz-Carlton</h5>
+            <p class="card-text">Rich in history and personality, New Orleans is unlike any other US city. Honoring its spirit and elegance, The Ritz-Carlton</p>
+            <a href="#" class="btn my-btn " style="margin-top:50px;">To home page</a>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card  col-md-4 m-1 my-card">
+          <img src="./img/sponsers/Logo-Ace-Hotellogo.jpeg" class="card-img-top" style="margin-top:30px;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ace-Hotel</h5>
+            <p class="card-text">A stone’s throw from the French Quarter, in the soul of the Deep South.
+
+              600 Carondelet St, New Orleans, Louisiana</p>
+            <a href="#" class="btn my-btn " style="margin-top:40px;">To home page</a>
+          </div>
+        </div>
+<!-- card 3 -->
+        <div class="card  col-md-4 m-1 my-card anim-r">
+          <img src="/img/sponsers/si_logo_L.webp" class="card-img-top" style="margin-top:10px;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sheraton-New-Orleans</h5>
+            <p class="card-text">A stay at Sheraton New Orleans Hotel places you in the heart of New Orleans, steps from Canal Street and Royal Street.</p>
+            <a href="https://www.marriott.com/en-us/hotels/msyis-sheraton-new-orleans-hotel/overview/" class="btn my-btn" style="margin-top:30px;">To home page</a>
+          </div>
+        </div>
+          <h3>Best museums:</h3>
+          <!-- card 4 -->
+        <div class="card  col-md-4 m-1 my-card">
+          <img src="/img/sponsers/death.png" class="card-img-top" style="max-width:150px;max-height:150px; margin-left:20%; " alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Museums of death</h5>
+            <p class="card-text">Our Hollywood location is now temporarily closed while taking the time to relocate. We will announce all specific details in the near future and we appreciate your well wishes.</p>
+            <a href="http://www.museumofdeath.net/" class="btn my-btn">Go somewhere</a>
+          </div>
+        </div>
+<!-- card 5 -->
+        <div class="card  col-md-4 m-1 my-card">
+          <img src="./img/sponsers/LCM.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Louisiana Children’s Museum</h5>
+            <p class="card-text">Louisiana Children’s Museum has cleaning and safety procedures throughout our museum that protect the health and well-being of our guests, volunteers, and staff members.</p>
+            <a href="https://lcm.org/" class="btn my-btn">To home page</a>
+          </div>
+        </div>
+<!-- card 6 -->
+        <div class="card  col-md-4 m-1 my-card">
+          <img
+            src="/img/sponsers/revised-Bloody-Mary-Museum-logo_v1_A9760E05-F60A-4B16-91F913FBBE167D89_1155c9e7-066b-4ed7-be1bc98413a77f94.jpeg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">The Haunted museum</h5>
+            <p class="card-text">Join us for a spirited adventure through Zak Bagans’ The Haunted Museum in Las Vegas, as seen on the Travel Channel’s Ghost Adventures!</p>
+            <a href="https://thehauntedmuseum.com/" class="btn my-btn">To home page</a>
+          </div>
+        </div>
+      
+        <h3>Food & Park</h3>
+        <!-- card 7 -->
+        <div class="card  col-md-4 m-1 my-card mb-5">
+          <img src="/img/sponsers/p-parking-logo.png" class="card-img-top" style="max-width:140px;max-height:140px; margin-left:23%;margin-top:5px;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">P-404</h5>
+            <p class="card-text">We live at the intersection of parking and technology. We are a technology company, a parking operator, and network of parking advisors to bring it all together.</p>
+            <a href="https://www.premiumparking.com/P402" class="btn my-btn">To home page</a>
+          </div>
+        </div>
+<!-- card 8 -->
+        <div class="card  col-md-4 m-1 my-card mb-5">
+          <img src="/img/sponsers/walkons-logo.svg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">There’s really no better way to describe the uniqueness of Walk-On’s Sports Bistreaux. We start every dish from scratch and use fresh ingredients to bring our mouthwatering,</p>
+            <a href="https://walk-ons.com/" class="btn my-btn">To home page</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <footer class="bottom">
+    <div class="d-flex justify-content-center">
+      <a href="https://www.facebook.com/MardiGrasNewOrleans" target="_blank"><img src="./svg/facebook.svg"
+          class="social-icon" alt=""></a>
+      <a href="https://www.instagram.com/mardigrasneworleans/" target="_blank"><img src="./svg/instagram.svg"
+          class="social-icon" alt=""></a>
+      <a href="https://twitter.com/MardiGrasNOLA" target="_blank"><img src="./svg/twitter.svg" class="social-icon"
+          alt=""></a>
+      <a href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q" target="_blank"><img src="./svg/youtube.svg"
+          class="social-icon" alt=""></a>
+    </div>
+<div class="bottom-0 center">Copyright ©  Mardi-Gras New-Orleans  | Site by Mtn-DBS-prog inc
+</div> 
+  </footer>
+</body>
+
+</html>

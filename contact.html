@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/sass/bootstrap.min.css">
+    <link rel="stylesheet" href="./sass/navbar.css">
+    <link rel="stylesheet" href="/sass/reponsive.css">
+    <link rel="stylesheet" href="./sass/contact.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="./js/contact.js" defer></script>
+    <title>form</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class='navbar navbar-expand-lg navbar-light my_nav'>
+        <div class='container'>
+          <a class="navbar-brand" href="index.html">
+            <img src="./img/xlogo.png.pagespeed.ic.q4Fw8Vll14.webp" id="brand_img" alt="" width="220" height="74"
+              class="d-inline-block align-text-top">
+          </a>
+          <button class='btn  navbar-toggler border-3 px-2' type='button' data-bs-toggle='offcanvas'
+            data-bs-target='#offcanvasExample' aria-controls='offcanvasExample'>
+            <img style='width: 30px' src='/img/text-center.svg' alt='menu icon'>
+          </button>
+          <div class='offcanvas offcanvas-start-lg my_nav' tabindex='-1' id='offcanvasExample'
+            aria-labelledby='offcanvasExampleLabel'>
+            <div class='offcanvas-header d-flex d-lg-none'>
+              <h5 class='offcanvas-title text-white' id='offcanvasExampleLabel'>Mardi-gras</h5>
+              <a href='javascript:void(0) ' class='text-reset p-0' data-bs-dismiss='offcanvas' aria-label='close'>
+                <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#FFFFFF' class='bi bi-x-circle'
+                  viewBox='0 0 16 16'>
+                  <path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z' />
+                  <path
+                    d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z' />
+                </svg>
+              </a>
+            </div>
+            <div class='offcanvas-body p-lg-0 navbar'>
+              <ul class='navbar-nav' id="my-ul">
+                <li class='nav-item'>
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class='nav-item'>
+                  <a class='nav-link active' aria-current='page' href='about.html'>About</a>
+                </li>
+                <li class='nav-item'>
+                  <a class='nav-link active' aria-current='page' href='FAQ.html'>FAQ</a>
+                </li>
+                <li class='nav-item'>
+                  <a class='nav-link active' aria-current='page' href='media.html'>Gallery</a>
+                </li>
+                <li class='nav-item'>
+                  <a class='nav-link active' aria-current='page' href='contact.html'>Contact us!</a>
+                </li>
+                <li class='nav-item'>
+                  <a class='nav-link active' aria-current='page' href='trivia.html'> <span class="my-span" style="color:red">T</span><span
+                      class="my-span" style="color:blue">r</span><span class="my-span" style="color:greenyellow">i</span><span
+                      class="my-span" style="color:purple">v</span><span class="my-span" style="color:orange">i</span><span
+                      class="my-span" style="color:darkcyan">a</span><span class="my-span">!</span></a>
+                </li>
+    
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control" id="my-input" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <h1 id="id_h1" class="display-1 center">Contact</h1>
+    <div class="my-form col-8 col-sm-10 col-md-4 m-auto mt-5 mb-5 p-3">
+        <form action="" method="get" id="my-form">
+            <h3 >Tell us what you think!</h3>
+
+            <div>
+                <label for="name" class="text_label">Your first name:</label>
+                <input type="text" name="fName" id="fName" placeholder="Your first name.." required>
+            </div>
+            <div id="name-err">
+
+            </div>
+            <div>
+                <label for="lName" class="text_label2">Your last name:</label>
+                <input type="text" name="lName" id="lName" placeholder="Your last name.." required>
+            </div>
+
+            <div>
+                <label for="email" class="email_label">Your Email:</label>
+                <input type="text" name="email" id="email" placeholder="Your email.." required>
+            </div>
+
+            <div>
+                <label for="phone number" class="pnumber">Your phone number:</label>
+                <input type="tel" name="phone" id="phone" placeholder="Your phone number..">
+            </div><br>
+
+            <div>
+                <textarea id="textarea" name="textarea" placeholder="Write something.."
+                    style="height:200px;"></textarea>
+            </div><br>
+
+            <div id="erros"></div>
+
+            <button class="myBtn">Submit</button>
+        </form>
+    </div>
+
+
+    <footer class="bottom mt-5">
+      <div class="d-flex justify-content-center">
+        <a href="https://www.facebook.com/MardiGrasNewOrleans" target="_blank"><img src="./svg/facebook.svg"
+            class="social-icon" alt=""></a>
+        <a href="https://www.instagram.com/mardigrasneworleans/" target="_blank"><img src="./svg/instagram.svg"
+            class="social-icon" alt=""></a>
+        <a href="https://twitter.com/MardiGrasNOLA" target="_blank"><img src="./svg/twitter.svg" class="social-icon"
+            alt=""></a>
+        <a href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q" target="_blank"><img src="./svg/youtube.svg"
+            class="social-icon" alt=""></a>
+      </div>
+  <div class="bottom-0 center">Copyright ©  Mardi-Gras New-Orleans  | Site by Mtn-DBS-prog inc
+  </div> 
+    </footer>
+
+</body>
+
+</html>
+

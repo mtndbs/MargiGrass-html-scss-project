@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", "sans-serif";
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Henny Penny";
+  font-family: "Pattaya";
+}
+
+.my-span {
+  font-family: "Henny Penny";
+  font-size: 1.2em;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+/* * nav bar , logos */
+.my_nav {
+  background-color: #cfc293 !important;
+}
+
+#brand_img {
+  transition: transform 1s;
+}
+
+#brand_img:hover {
+  transform: translateX(10px);
+  filter: brightness(1.75);
+}
+
+.social-icon {
+  margin: 20px;
+  margin-top: 50px;
+  transform: scale(3);
+}
+
+.social-icon-quad {
+  transform: scale(0.8);
+}
+
+footer {
+  margin-top: -8vh;
+  background-color: #a752aa;
+  height: 18vh;
+  color: white;
+  -webkit-clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 100% 30%);
+          clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 100% 30%);
+}
+
+#my-input {
+  margin-left: 20vw;
+}
+
+.navbar-nav li a {
+  color: black !important;
+  font-size: 1.2rem;
+}
+
+.navbar-nav li a:hover {
+  color: #a752aa !important;
+  transition: all 0.4s;
+}
+
+@media (min-width: 992px) {
+  .offcanvas {
+    visibility: visible;
+    position: relative;
+    background: none;
+    border: none;
+    justify-content: end;
+    color: #a752aa;
+  }
+}
+@media (max-width: 992px) {
+  .offcanvas {
+    width: 250px !important;
+  }
+  .offcanvas-start-lg {
+    top: 0;
+    left: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    transform: translateX(-100%);
+  }
+  #my-input {
+    margin-left: 0;
+  }
+}/*# sourceMappingURL=navbar.css.map */

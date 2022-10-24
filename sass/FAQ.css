@@ -1,0 +1,33 @@
+* {
+  font-family: "Roboto", "sans-serif";
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Henny Penny";
+  font-family: "Pattaya";
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.my-div {
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px 4px rgba(50, 50, 50, 0.59);
+  background-color: #a752aa;
+}
+
+.main-title {
+  font-size: 4rem;
+  color: #a752aa;
+}
+
+.my-title {
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px 4px rgba(50, 50, 50, 0.59);
+  background-color: #ffcd00;
+  font-size: 2rem;
+}/*# sourceMappingURL=FAQ.css.map */

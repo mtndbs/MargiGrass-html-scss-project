@@ -1,0 +1,229 @@
+@import "colors";
+@import "misc";
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', 'sans-serif';
+  }
+
+h1,h2,h3,h4,h5{
+  font-family: 'Pattaya'; 
+  font-family: 'Henny Penny';  
+}
+
+#main_logo {
+    transition: transform 1s;
+    max-width: 30vw;
+  }
+  #main_logo:hover {
+    transform: scale(1.05);
+    filter: brightness(1.75);
+  }
+  #main_logo:active{
+    transform: scale(0.8);
+  }
+  #my-boxes{
+@include bgMix;
+box-shadow: $shadow-bottom;
+box-shadow: $shadow-top;
+  }
+  .my-box{
+    @include myBox($myWhite)
+  }
+  
+.my-btn {
+  @include myBtn($myPurple, $myBlack);
+  a{
+  color:white;
+  text-decoration: none !important;
+
+  }
+}
+.my-btn:hover{
+  @include myBtnHover();
+}    
+.my-btn:active{
+  @include myBtnActive();
+
+}
+.bg-myPurple{
+  background-color: $myPurple !important;
+}
+  
+  /* header and body style */
+.pop-div{
+  text-align: center;
+  margin: 20px 0px;
+  color:$myWhite;
+  height: fit-content;
+  background-color:#71c02cca;
+  border-radius: 7px;
+  box-shadow:$myShadow;
+  visibility:100%;
+  transition: all 1s;
+}
+
+
+.my-divider{
+  color:$myYellow;
+  font-size: 1.4rem;
+  width:100%;
+  height: 30vw;
+  background-image: url('/img/asset\ 16.jpeg');
+  box-shadow: 0 -35px 35px -35px $myPurple;
+  p{
+    max-width: 60vw;
+    color:$myGreen
+  }
+
+}
+	h3{
+    padding-top: 21px;
+    color:$myBlack;
+    font-size: 3rem;
+  }		
+
+.my-header{
+  display: flex;
+  flex-direction: row;
+  background-image: url('../img/xhome-header1.jpg.pagespeed.ic.39DcPhyq8Y.webp');
+  // height: 40vh;
+
+}
+
+#my_divider_2{
+  display: flex;
+  flex-direction: row-reverse;
+  // justify-content:;
+  background-image: url(/img/gallery/mask-1973994_1920.jpg);
+  height: 20vh;
+  background-color:$myGreen;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  // box-shadow: 0 25px 25px -25px $myPurple;
+}
+#my_divider_3{
+  height: 5vh;
+
+}
+#my_divider_4{
+  height: 5vh;
+  border-bottom-left-radius:15% ;
+  border-bottom-right-radius:15% ;
+
+}
+#my_slider{
+  height: 85vh;
+  padding: 0% 15%;
+}
+#trivia_pic{
+  width: 300px;
+  height: 200px;
+  backdrop-filter: contrast(180%);
+  margin-top: 10vh;
+  border-bottom-left-radius: 25%;
+}
+#alt-pic{
+  display:none;
+}
+
+.my-card{
+  width: 18rem;
+  height: 28rem;
+}
+
+@media screen and (max-width: 700px){
+ 
+  .my-header{
+  display: flex;
+  flex-direction: column;
+  }
+  .my-divider{
+    height: 60vh;
+    font-size: 1rem;
+  }
+ 
+  #trivia_pic{
+    width: 150px;
+    height: 100px;
+    backdrop-filter: contrast(180%);
+    margin-top: 10vh;
+    border-bottom-left-radius: 25%;
+  }
+  #my_divider_1{
+  margin-top: 10vh;
+  }
+  #my_divider_2{
+    height: 10vh;
+    background-color:$myPurple;
+    
+  }
+  #main-slider{
+    display: none;
+  }
+  #alt-pic{
+    // height: 30vh;
+    display: block;
+  }
+}
+
+
+/* Animation property */
+
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+
+.special-btn {
+  left: calc(50% - 3em);
+  top: calc(50% - 2em);
+  transform-origin: 50% 5em;
+  animation: wiggle 3s linear infinite;
+}
+
+
+
+
+.anim-l {
+  position: relative;
+  animation-name: left-l;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes left-l {
+  0%   { left:-500px;}
+  100% { left:0px;}
+}
+
+.anim-r {
+  position: relative;
+  animation-name: left-r;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes left-r {
+  0%   { right:-500px;}
+  100% { right:0px;}
+}

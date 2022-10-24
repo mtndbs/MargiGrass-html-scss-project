@@ -1,0 +1,141 @@
+@import "colors";
+@import "misc";
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", "sans-serif";
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Pattaya";
+  font-family: "Henny Penny";
+}
+#id-h1 {
+  @include myTitle($myWhite);
+}
+#trv-header {
+  margin-top: 10vh;
+  background-image: url(/img/istockphoto-1364943600-612x612.jpg);
+  width: 60vw;
+  border-radius: 20px;
+  height: 1870px;
+  box-shadow: $shadow-all;
+}
+.my-btn {
+  @include myBtn($myPurple, $myWhite);
+  a {
+    text-decoration: none;
+  }
+}
+.my-btn:hover {
+  @include myBtnHover;
+}
+.my-btn:active {
+  @include myBtnActive;
+}
+#trivia-q {
+  min-height: 80vh;
+}
+.question-div {
+  @include myDiv($myPurple);
+  margin: 20px auto;
+}
+#jump-score {
+  color: gold;
+  position: fixed;
+  animation: score 2s ease-out;
+  font-size: 40px;
+  text-shadow: 1px 1px 2px $myPurple, 0 0 1em $myGreen, 0 0 0.2em $myYellow;
+}
+
+#q_2,
+#q_3,
+#q_4,
+#q_5,
+#q_6,
+#q_7,
+#q_8,
+#q_9 {
+  display: none;
+  transition: all 1s;
+}
+
+@keyframes score {
+  0% {
+    bottom: 0;
+    visibility: hidden;
+  }
+  50% {
+    bottom: 490px;
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+#score-id {
+  @include myDiv($myGreen);
+  display: none;
+  position: fixed;
+  text-align: center;
+  left: 40%;
+  font-size: 2rem;
+  color: $myBlack;
+  padding: 40px;
+}
+#span-id {
+  font-size: 4rem;
+}
+#score-span {
+  font-size: 2rem;
+  color: $myPurple;
+}
+@media screen and (max-width: 700px) {
+  #trv-header {
+    width: 100vw;
+    border-radius: 0px;
+  }
+  #score-id {
+    left: 15%;
+  }
+}
+// 02-5847171;
+// 7211;
+// *5412;
+
+// 716828
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+.special-btn {
+  left: calc(50% - 3em);
+  top: calc(50% - 2em);
+  transform-origin: 50% 5em;
+  animation: wiggle 3s linear infinite;
+}

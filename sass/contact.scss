@@ -1,0 +1,73 @@
+@import "colors";
+@import "misc";
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", "sans-serif";
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Henny Penny";
+  font-family: "Pattaya";
+}
+
+h1 {
+  color: $myPurple;
+}
+.my-form {
+  border-radius: 5px;
+  background-color: $myYellow;
+  box-shadow: $myShadow;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 8px 8px 8px 0;
+  display: inline-block;
+}
+input::placeholder {
+  filter: opacity(0%);
+}
+
+.myBtn {
+  @include myBtn($myPurple, $myBlack);
+}
+.myBtn:hover {
+  @include myBtnHover();
+}
+.myBtn:active {
+  @include myBtnActive();
+}
+#check-off {
+  color: $myGreen;
+}
+@media screen and (max-width: 700px) {
+  label {
+    display: none;
+  }
+  input::placeholder {
+    filter: opacity(100%);
+  }
+  input[type="text"],
+  input[type="tel"],
+  textarea {
+    width: 97%;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin: 4px;
+  }
+}

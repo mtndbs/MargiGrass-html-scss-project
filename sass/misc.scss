@@ -1,0 +1,54 @@
+$myShadow:0px 0px 7px 4px rgba(50, 50, 50, 0.59);
+$myRadius:5px;
+
+//box-shadow
+$shadow-all: 0 0 5px #333;
+$shadow-top: 0 -15px 5px -15px #904FC3;
+$shadow-right: 5px 0 5px -5px #333;
+$shadow-bottom: 0 5px 15px -15px #904FC3;
+$shadow-left: -5px 0 5px -5px #333;
+
+
+@mixin myDiv($bg){
+border-radius:$myRadius;
+box-shadow:$myShadow;
+background-color:$bg;
+}
+
+@mixin myBtn($bg,$color){
+border-radius: 5px;
+padding: 5px 15px;
+background-color:$bg;
+color:$color;
+box-shadow: $shadow-all;
+transition: all 1s;
+text-decoration: none;
+}
+
+@mixin myBtnHover(){
+    transform: scale(1.05);
+    filter: brightness(1.75);
+}
+
+@mixin myBtnActive(){
+    transform: scale(0.95);
+}
+
+@mixin myTitle($color){
+    text-align: center;
+    font-size: 4rem;
+    color:$color;
+}
+
+@mixin myBg($bg){
+    background-color: $bg;
+}
+
+// BOX-SHADOW lite
+@mixin myBox($bg){
+box-shadow:rgba(0, 0, 0, 0.25) 3px 10px 26px -5px ;
+border-radius: 5px;
+background-color:$bg;
+}
+
+    
